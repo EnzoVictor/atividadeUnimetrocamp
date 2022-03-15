@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastra-se</title>
+</head>
+<body bgcolor="#F0F8FF">
+
+    <h1>Formulário</h1>
+    <h3>Preencha o seu cadastro:</h3>
+    <form>
+    <fieldset>
+        <legend>
+            Dados pessoais
+        </legend>
+        <br>
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <br>
+        <div>
+            <label for="sobrenome">Sobrenome:</label><br>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label><br>
+            <input type="text" name="email" id="email" placeholder="insira seu e-mail">
+        </div>
+        <br>
+        <div>
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+        <br>
+        <div>
+            <label>Gênero:</label><br>
+            <input type="radio" name="genero" value="genero">Masculino
+            <input type="radio" name="genero" value="genero">Feminino
+        </div>
+        <br>
+        <div>
+            <label for="cpf">CPF:</label><br>
+            <input type="text" name="cpf" id="cpf" placeholder="222.222.222.22">
+        </div>
+        <br>
+        <div>
+            <label for="rg">RG:</label><br>
+            <input type="text" name="rg" id="rg" placeholder="2222222222-2">
+        </div>
+        <br>
+        <div>
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" name="endereco" id="endereco" placeholder="Rua 11">
+        </div>
+        <br>
+        <div>
+            <label for="uf">UF:</label><br>
+            <select id="uf" name="uf">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="PB">PB</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="cep">CEP:</label><br>
+            <input type="text" name="cep" id="cep" placeholder="25555-555">
+        </div>
+        <br>
+        <div>
+            <label for="tel">Telefone:</label><br>
+            <input type="text" name="tel" id="tel" placeholder="(19) 988888888">
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>
+            Dados profissionais
+        </legend>
+        <br>
+        <div>
+            <label>Natureza de cargo:</label><br>
+            <input type="radio" name="cargo">Gerência
+            <input type="radio" name="cargo">Financeiro
+            <input type="radio" name="cargo">Recepção
+            <input type="radio" name="cargo">Administrativo
+            <input type="radio" name="cargo">Juridico
+        </div>
+        <br>
+        <div>
+            <label>Área de interesses:</label><br>
+            <input type="checkbox" name="interesses">Computação
+            <input type="checkbox" name="interesses">Biologia
+            <input type="checkbox" name="interesses">Meio ambiente
+            <input type="checkbox" name="interesses">Engenharia
+            <input type="checkbox" name="interesses">História
+        </div>
+        <br>
+        <div>
+            <label for="curriculo">Curriculo:</label><br>
+            <input type="file" name="curriculo" id="curriculo">
+        </div>
+        <br>
+        <div>
+            Observação:<br>
+            <textarea></textarea>
+        </div>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar" name="enviar">
+    <input type="reset" value="Limpar" name="limpar">
+    </form>
+</body>
+</html>
