@@ -1,0 +1,116 @@
+/*========================*/
+/*
+    FORMATANDO A ESTRUTURA DO SITE
+*/
+*{
+    margin: 0;
+    padding: 0;}
+
+body{
+    background: url('parte-de-fundo.jpg') no-repeat center;}
+
+h1{
+    background-color: hsl(290, 100%, 63%);
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    }
+
+form{
+    padding: 15px;}
+
+input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 1.9em;
+    margin-bottom: 10px;
+    }
+
+label{
+    margin-bottom: 10px;}
+
+/*========================*/
+/*
+    FORMATANDO O CONTEUDO DO SITE
+*/
+#container{
+    border: solid 5px rgb(150, 1, 255);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 550px;
+    margin-top: 100px;
+    background: #d9d9d9;
+    }
+
+#container h1{
+    text-align: center;}
+
+.icon-login{
+    text-align: center;
+    margin-top: -35px;
+    }
+
+.sobrenome{
+    padding-left: 15px;}
+
+.icon-email{
+	padding-left:23px;
+	padding-top:5px;
+	height:20px;
+	background-image:url('usuario.png');
+	background-repeat:no-repeat left top;}
+
+/*
+    body{   font-family: "Trebuchet MS", Helvetica, Sans serif;
+        background: #643d87; }
+
+#container{
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.3);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            margin-top: 120px;
+            text-align: center;
+}
+
+#container img{
+                margin-top: -70px;
+                margin-bottom: 20px;
+                }
+
+input{
+                    font-size: 18px;
+                    width: 60%;
+                    height: 40px;
+                    margin-bottom: 10px;
+                    background-color: #fff;
+                    padding-left: 60px;
+                    border: none;
+                    background-repeat: no-repeat;
+                    background-position: 20px;
+
+}
+
+input.email{
+            background-image: url('icone-usuario.png')}
+
+input.senha{
+            background-image: url('icone-cadeado.png')}
+
+input.submit {
+                    color: #fff;
+                    background-color: #FF9504;
+                    border: solid 3px #D47B03;
+                    padding-right: 60px;
+                    background: -webkit-linear-gradiant(to bottom #FFAA38, #FF9200);
+                    background: -moz-linear-gradiant(to bottom #FFAA38, #FF9200);
+                    background: -o-linear-gradiant(to bottom #FFAA38, #FF9200);
+                    background: linear-gradiant(to bottom #FFAA38, #FF9200);
+                    cursor: pointer;}
+*/
+*/
