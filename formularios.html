@@ -2,20 +2,93 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Cadastra-se</title>
     <link type="text/css" href="utils.css" rel="stylesheet">
 </head>
 <body>
 
     <div id="container">
-        <h1>Tela de cadastro</h1>
+        <h1>Create account!</h1>
         <div class="icon-login">
             <img src="man.png" width="100">
         </div>
         <form>
 
+            <label for="name">Name:
+                <input type="text" name="name" id="name">
+            </label>
+
+            <label class="sobrenome" for="sobrenome">Last name:
+                <input type="text" name="sobrenome" id="sobrenome">
+            </label>
+
+            <div class="conteudo-centralizado">
+                <label for="email">Email:<br>
+                    <input class="email" type="text" name="email" id="email" placeholder="enter your email"><br>
+                </label>
+
+                <label for="senha">Password:<br>
+                    <input class="senha" type="password" name="senha" id="senha" placeholder="enter your password">
+                    <br>
+                </label>
+
+                <label for="number">Number:<br>
+                    <input class="number" type="text" name="number" id="number" placeholder="(DDD) 988888888">
+                </label>
+
+            </div>
+
+            <fieldset>
+                <legend>
+                    Address
+                </legend><br>
+                <label for="endereco">
+                    Adrees:
+                    <input name="endereço" type="text" id="endereco">
+                </label>
+
+                <label class="number-home" for="numero-casa">
+                    N°:
+                    <input name="number-home" type="text" id="numero-casa">
+                </label>
+
+                <label class="cep" for="cep">
+                    Zip code :
+                    <input name="cep" type="text" id="cep">
+                </label>
+            </fieldset>
+            Genre: <br>
+            <input class="genero" type="radio" name="sexo" value="M">masculine
+            <input class="genero" type="radio" name="sexo" value="F">feminine<br><br>
+
+            <label class="interesses">
+                Area of interests:<br>
+                <input class="interesse" name="interesses" type="checkbox">Volleyball
+                <input class="interesse" name="interesses" type="checkbox">soccer
+                <input class="interesse" name="interesses" type="checkbox">swimming
+                <input class="interesse" name="interesses" type="checkbox">fight
+            </label><br><br>
+
+            Insert your photo: <br>
+            <input type="file" name="foto"><br><br>
+
+            Describe yourself:<br>
+            <textarea>
+
+            </textarea>
+            <br>
+            <input class="submite" type="submit" value="To send">
+            <input class="reset" type="reset" value="Reset">
         </form>
 
+
+    </div>
+
+    <div class="rodape">
+        <div class="cabecalho">
+            Copyright &copy; 2017 - 2020 Lekker
+        </div>
     </div>
 
 </body>

@@ -4,9 +4,12 @@
 */
 *{
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    font-family: sans-serif;}
 
 body{
+    width: 100%;
+    height: 100vh;
     background: url('parte-de-fundo.jpg') no-repeat center;}
 
 h1{
@@ -16,7 +19,7 @@ h1{
     }
 
 form{
-    padding: 15px;}
+    padding: 10px;}
 
 input{
     -webkit-border-radius: 5px;
@@ -24,10 +27,19 @@ input{
     border-radius: 5px;
     line-height: 1.9em;
     margin-bottom: 10px;
+    border: none;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: 10px;
     }
 
-label{
-    margin-bottom: 10px;}
+fieldset{
+    padding: 10px;
+    margin-bottom: 20px;}
+
+textarea{
+    width: 50%;
+    height: 100px;}
 
 /*========================*/
 /*
@@ -40,8 +52,9 @@ label{
     border-radius: 10px;
     margin: 0 auto;
     width: 550px;
-    margin-top: 100px;
+    margin-top: 50px;
     background: #d9d9d9;
+    min-width: 550px;
     }
 
 #container h1{
@@ -49,68 +62,75 @@ label{
 
 .icon-login{
     text-align: center;
-    margin-top: -35px;
+    margin-top: -30px;
     }
 
-.sobrenome{
-    padding-left: 15px;}
+.sobrenome, .number-home, .cep{
+    margin-left: 15px;}
 
-.icon-email{
-	padding-left:23px;
-	padding-top:5px;
-	height:20px;
-	background-image:url('usuario.png');
-	background-repeat:no-repeat left top;}
+.number-home input,
+.cep input{
+    width: 40px;}
 
-/*
-    body{   font-family: "Trebuchet MS", Helvetica, Sans serif;
-        background: #643d87; }
+.conteudo-centralizado{
+    text-align: center;
+    }
 
-#container{
-            width: 500px;
-            height: 400px;
-            margin: 0 auto;
-            background-color: rgba(255,255,255,0.3);
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            margin-top: 120px;
-            text-align: center;
-}
+.conteudo-centralizado input{
+    padding-left: 40px;
+    width: 60%;
+    padding-right: 100px;
+    }
 
-#container img{
-                margin-top: -70px;
-                margin-bottom: 20px;
-                }
+.email{
+    background-image: url('icone-usuario.png');
+    line-height: 2.1em;
+    }
 
-input{
-                    font-size: 18px;
-                    width: 60%;
-                    height: 40px;
-                    margin-bottom: 10px;
-                    background-color: #fff;
-                    padding-left: 60px;
-                    border: none;
-                    background-repeat: no-repeat;
-                    background-position: 20px;
+.senha{
+    background-image: url('icone-cadeado.png');
+    line-height: 2.1em;}
 
-}
+.number{
+    background-image: url('iphone.png');
+    line-height: 2.1em;
+    background-position: 5px;}
 
-input.email{
-            background-image: url('icone-usuario.png')}
+.interesses input{
+    margin-left: 20px;}
 
-input.senha{
-            background-image: url('icone-cadeado.png')}
 
-input.submit {
-                    color: #fff;
-                    background-color: #FF9504;
-                    border: solid 3px #D47B03;
-                    padding-right: 60px;
-                    background: -webkit-linear-gradiant(to bottom #FFAA38, #FF9200);
-                    background: -moz-linear-gradiant(to bottom #FFAA38, #FF9200);
-                    background: -o-linear-gradiant(to bottom #FFAA38, #FF9200);
-                    background: linear-gradiant(to bottom #FFAA38, #FF9200);
-                    cursor: pointer;}
-*/
-*/
+.submite, .reset{
+    margin-top: 20px;
+    margin-left: 35px;
+    border: 3px solid #e600e6;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.9em;
+    color: #fff;
+    background-color: hsl(290, 100%, 63%);}
+
+.submite:hover{
+    color: black;
+    background: #ff4dff;}
+
+.rodape{
+    width: 100%;
+    height: 50px;
+    background-color: hsl(290, 100%, 63%);
+    opacity: 0.7;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0%;}
+
+.cabecalho{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+    padding-top: 20px;}
+
+.genero, .interesse{
+    margin-right: 10px;
+    margin-left: 5px;}
