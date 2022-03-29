@@ -111,7 +111,7 @@ textarea{
     color: #fff;
     background-color: hsl(290, 100%, 63%);}
 
-.submite:hover{
+.submite:hover, .reset:hover{
     color: black;
     background: #ff4dff;}
 
